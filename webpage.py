@@ -1,9 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/', methods=["GET"])
+@app.route('/', methods=["POST", "GET"])
 def welcome():
-    return "I found you " + request.remote_addr
+    return render_template("screen.html")
 
-app.run(host="0.0.0.0", port="3000")
+if __name__=="__main__":
+    app.run(host="0.0.0.0", port="3000")
