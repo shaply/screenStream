@@ -1,2 +1,10 @@
-<h1>My signature</h1>
-<img src="{{ url_for('static', filename='images/signature.jpg') }}" />
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fullbody.css') }}">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/screen.js') }}"></script>
+</head>
+<body>
+    <div id="container">
+        <img src="{{ url_for('static', filename='images/frame.jpg') }}" id="livefeed"/>
+    </div>
+</body>
